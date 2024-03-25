@@ -1,0 +1,9 @@
+import string as st
+import numpy as np
+
+letras = st.ascii_letters
+numeros = st.digits
+especial = st.punctuation
+Combinação= letras+numeros+especial
+senha = np.random.choice(list(Combinação,),10)
+print(''.join(senha))
